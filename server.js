@@ -36,9 +36,13 @@ app.use(express.static("public"));
 app.use(router);
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/mongo-scraper", {
+// mongoose.connect("mongodb://localhost/mongo-scraper", {
+//   useMongoClient: true
+// });
+
+mongoose.connect("mongodb://heroku_68q4cb3q:jlcmlc08@ds161493.mlab.com:61493/heroku_68q4cb3q", {
   useMongoClient: true
-})
+});
 
 // mongoose.connect("mongodb://heroku_5zzxjlhw:5nuph8s8jngoo5h76edkvi5a4@ds149433.mlab.com:49433/heroku_5zzxjlhw", {
 // useMongoClient: true
