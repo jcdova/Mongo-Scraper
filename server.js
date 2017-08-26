@@ -49,10 +49,10 @@ if (PORT === 8080) {
   	useMongoClient: true
   });
 } else {
-  mongoose.connect("mongodb://heroku_68q4cb3q:jlcmlc08@ds161493.mlab.com:61493/heroku_68q4cb3q", {
+  mongoose.connect("mongodb://heroku_vp0s3h5l:n9qga6cf357od0crdb4k686v2n@ds111589.mlab.com:11589/heroku_vp0s3h5l", {
   	useMongoClient:true
   });
-}
+};
 
 
 var db = mongoose.connection;
